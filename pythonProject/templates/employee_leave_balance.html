@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Leave Balance{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Your Leave Balance for {{ leave_balance.year }}</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Total Leaves</th>
+            <th>Leaves Taken</th>
+            <th>Remaining Leaves</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ leave_balance.total_leaves }}</td>
+            <td>{{ leave_balance.leaves_taken }}</td>
+            <td>{{ leave_balance.remaining_leaves }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Update Leave Balance{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Update Leave Balance for {{ user.username }}</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="leave" class="form-label">Leave Days</label>
+            <input type="number" class="form-control" id="leave" name="leave" value="{{ user.leave_days }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Update Leave Balance{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Update Leave Balance</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label for="year" class="form-label">Year</label>
+        <input type="number" class="form-control" id="year" name="year" required>
+    </div>
+    <div class="mb-3">
+        <label for="leaves_taken" class="form-label">Leaves Taken</label>
+        <input type="number" class="form-control" id="leaves_taken" name="leaves_taken" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+{% endblock %}
