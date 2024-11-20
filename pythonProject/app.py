@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, session, flash, url_for
 from database import create_tables, add_user, login_user, apply_leave, view_leaves, update_leave_status, get_leave_balance
 from helpers import get_user_by_id, get_db_connection  # Ensure correct import of get_db_connection
-import pyodbc
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Secret key for session management
